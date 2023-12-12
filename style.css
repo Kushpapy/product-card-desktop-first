@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(228, 12%, 48%);
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    max-width: 45rem;
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    column-gap: 1.6rem;
+    margin-top: 5rem;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.product-img{
+   background-image: url('images/image-product-desktop.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+.product-info{
+    align-self: center;
+    padding: 2.4rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.product-title{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.product-name{
+    font-size: 3rem;
+    line-height: 1.025;
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+}
+
+.product-description{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: hsl(228, 12%, 48%);
+}
+
+.pricing{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.pricing-large{
+    font-size: 2.2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.pricing-small{
+    text-decoration: line-through;
+}
+
+.cart{
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    color:  hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cart:hover{
+    background-color: #087f5b
+}
+
+@media (max-width: 42em){
+    .product-card{
+        padding: 1.2rem;
+    }
+
+    .container{
+        grid-template-columns: 1fr;    
+    }
+
+    .product-img{
+        background-image: url('images/image-product-desktop.jpg');
+        grid-row: 1;
+        height: 20rem;
+        background-size: cover;
+     }
+}
