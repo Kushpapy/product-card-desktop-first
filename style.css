@@ -92,7 +92,7 @@ body{
 }
 
 .cart:hover{
-    background-color: #087f5b
+    background-color: #087f5b;
 }
 
 @media (max-width: 42em){
